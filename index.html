@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" href="globals.css" />
+    <link rel="stylesheet" href="styleguide.css" />
+    <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+    <div class="header">
+        <div class="div">
+            <div class="sign-up-form">
+                <div class="overlap-group">
+                    <div class="text-wrapper">Sign In</div>
+                    <p class="do-you-have-an-accou">Do you have an Account?</p>
+                    <div class="middle-fill"><button class="sign-up" id="twitter-login">Login via Twitter</button></div>
+                    <div class="sign-up-wrapper"><button class="sign-up-2" id="signin-button">Sign In</button></div>
+                    <div class="divider-or">
+                        <img class="divider" src="https://c.animaapp.com/uKy6PQ1G/img/divider-1.svg" />
+                        <div class="text-wrapper-2">or</div>
+                        <img class="img" src="https://c.animaapp.com/uKy6PQ1G/img/divider.svg" />
+                    </div>
+                    <div class="checkbox-checked">
+                        <input type="checkbox" id="terms-checkbox">
+                        <label for="terms-checkbox" class="checked">I agree to the Terms of Service.</label>
+                        <!-- <img class="on" src="https://c.animaapp.com/uKy6PQ1G/img/on-1.svg" /> -->
+                    </div>
+          
+                    
+                    <div class="middle-dark-outline"><input type="password" id="password" placeholder="Your password"></div>
+                    <div class="div-wrapper"><input type="email" id="email" placeholder="Your email"></div>
+                    <div class="sign-up-3" id="signup-button">Sign Up Now</div>
+                </div>
+            </div>
+            <div class="text">
+                <p class="the-most-important-p">
+                    The most important part of the Startup is the samples. The samples form a set of 25 usable pages you can use
+                    as is or you can add new blocks.
+                </p>
+                <div class="middle-fill-2"><button class="sign-up-4" id="learn-more-button">Learn More</button></div>
+                <div class="twenty-five-awesome">Generate Awesome Web Pages</div>
+            </div>
+            <div class="header-menu">
+                <div class="navbar">
+                    <div class="middle-fill-3"><button class="sign-up-5" id="purchase-button">Purchase</button></div>
+                    <div class="text-wrapper-4">Feedback</div>
+                    <div class="text-wrapper-5">Blog</div>
+                    <div class="text-wrapper-6">Prices</div>
+                    <div class="about">Overview</div>
+                </div>
+                <div class="white">
+                    <div class="white-2"><div class="text-wrapper-7">Startup 3</div></div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script>
+      
+        document.getElementById("signin-button").addEventListener("click", function() {
+            alert("Sign In Clicked");
+        });
+
+        document.getElementById("twitter-login").addEventListener("click", function() {
+            alert("Twitter Login Clicked");
+        });
+
+        document.getElementById("terms-checkbox").addEventListener("change", function() {
+            if (this.checked) {
+                alert("Terms checkbox checked");
+            } else {
+                alert("Terms checkbox unchecked");
+            }
+        });
+
+        document.getElementById("learn-more-button").addEventListener("click", function() {
+            alert("Learn More Clicked");
+        });
+
+        document.getElementById("purchase-button").addEventListener("click", function() {
+            alert("Purchase Clicked");
+        });
+    </script>
+</body>
+</html>
