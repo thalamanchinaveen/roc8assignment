@@ -21,3 +21,12 @@ document.getElementById("learn-more-button").addEventListener("click", function(
 document.getElementById("purchase-button").addEventListener("click", function() {
     alert("Purchase Clicked");
 });
+
+
+document.addEventListener('DOMContentLoaded', function () {
+    var checkbox = document.getElementById('terms-checkbox');
+    if (checkbox) {
+      checkbox.checked = true;
+    }
+  });
+  
